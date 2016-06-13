@@ -1,8 +1,12 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>User Dialogue Example</title>
     <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
    
     <!--SCRIPTS-->   
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
@@ -11,37 +15,57 @@
     
 </head>
 <body>
-<div id="content-wrapper" class="3">
+<header>
     <h1>User Dialogue Test</h1>
-
-    <form id="signupForm" method="post" class="" action="">
-        <div id="name-field" class="">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="" name="name" placeholder="Name">
+</header>
+<div id="content-wrapper" class="3">
+    <form id="signupForm" method="post" action="POST">
+        <div class="form-group">
+            <div id="name-field">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="text-input" name="name" placeholder="Name">
+            </div>
         </div>
-        <div id="username-field" class="form-group">
-            <label for="username">Create a Username</label>
-            <input id="username" type="username" class="" name="username" placeholder="Username">
+        <div class="form-group">
+            <div id="username-field">
+                <label for="username">Create a Username</label>
+                <input id="username" type="text" class="text-input" name="username" placeholder="Username">
+            </div>
         </div>
-        <div id="password-field" class="">
-            <label for="password">Create a Password</label>
-            <input type="password" class="" id="password" name="password" placeholder="Password">
+        <div class="form-group">
+            <div id="password-field">
+                <label for="password">Create a Password</label>
+                <input type="password" class="text-input" id="password" name="password" placeholder="Password">
+            </div>
         </div>
-        <div id="password-confirm-field" class="">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" class="" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+        <div class="form-group">
+            <div id="password-confirm-field">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="text-input" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+            </div>
         </div>
-        <div id="email-field" class="">
-            <label for="email">Email</label>
-            <input id="email" type="email" class="" name="email" placeholder="myemailaddress@mail.com">
+        <div class="form-group">
+            <div id="email-field">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="text-input" name="email" placeholder="myemailaddress@mail.com">
+            </div>
         </div>
-        <div id="tos-field" class="">
-            <label>
-                <input type="checkbox" id="agree" name="agree" value="agree" />I agree to <a href="#">Terms &amp; Conditions</a>
-            </label>
+        <div class="form-group tos-group">
+            <div id="tos-field">
+                <label>
+                    <input type="checkbox" id="agree" name="agree" value="agree" /> I agree to <a href="#">Terms &amp; Conditions</a>
+                </label>
+            </div>
         </div>
-        <button type="submit" class="">Submit <span class=""></span></button>
+        <div class="form-group">
+            <div>
+                <button type="submit" class="">Create Account <span class=""></span></button>
+            </div>
+        </div>
     </form>
 </div>
+<footer>
+    <p>Matthew Landers | 2016</p>
+</footer>
 </body>
 </html>

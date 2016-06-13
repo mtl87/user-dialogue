@@ -1,0 +1,79 @@
+/* Container Styles -----------------------*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+    outline: none
+
+.form-group div
+    position: relative
+
+.form-group label
+    display: block
+    font-weight: 600
+    font-size: .9rem
+    transition: $normal-speed
+
+.form-group input
+    font-size: 1.1rem
+        
+.form-group input.text-input 
+    padding: 10px
+    margin: 3px auto 20px auto
+    border: 1px solid $off-white
+    border-radius: $br
+    font-weight: 300
+    width: 93%
+    transition: $normal-speed
+
+.form-group input.text-input:focus
+    border: 1px solid $primary-color
+
+.form-group .help-block
+    position: absolute
+    bottom: -20px
+    left: 0
+    background: $error-color
+    color: $white
+    z-index: 100
+    padding: 5px
+    border-radius: $br
+    max-width: 320px
+
+.form-group .help-block:before
+    content: " "
+    position: absolute
+    width: 0
+    height: 0
+    border-left: 10px solid transparent
+    border-right: 10px solid transparent
+    border-bottom: 10px solid $error-color
+    top: -7px
+    left: 7px
+    border-radius: $br
+    z-index: 50
+
+.form-group.has-error input.text-input
+    border: 1px solid $error-color
+
+.form-group.has-success input.text-input
+    border: 1px solid $success-color
+    
+.form-group.has-error label
+    color: $error-color
+    
+#tos-field 
+    padding: 12px 0 20px 0
+    
+.form-group button
+    background: $success-color
+    color: $white
+    padding: 10px 20px
+    border-radius: 3px
+    border: none
+    transition: $normal-speed
+
+.form-group button:hover
+    background: $success-color-hover
+    
